@@ -3,6 +3,8 @@ library(shiny)
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
 
+    useShinyjs(),
+    
     # Application title
     titlePanel("Convert Panther XML to XLSX"),
 
@@ -10,9 +12,8 @@ shinyUI(fluidPage(
     sidebarLayout(
         sidebarPanel(
             fileInput("xmlfile", label = h3("File input"), accept = ".xml"),
-            actionButton("exportbtn", label = "Export", class = "btn-success"),
-            # downloadButton("exportbtn", "Download"),
-            verbatimTextOutput("saveTxt")
+            downloadButton("dl", "Download"),
+            p(id="info", "Hello! Please upload xml file")
         ),
 
         # Show a plot of the generated distribution
