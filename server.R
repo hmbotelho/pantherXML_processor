@@ -20,6 +20,8 @@ shinyServer(function(input, output) {
 
         df_out <- lapply(1:length(nodesListG), function(g){
         
+            print(paste0(round(g/length(nodesListG)*100,2), "%"), quote = F)
+            
             mapped_id <- if(is.null(nodesListG[[g]][["result"]][["input_list"]][["mapped_id_list"]])){
                 ""
             }else{
