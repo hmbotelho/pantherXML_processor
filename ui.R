@@ -10,8 +10,8 @@ shinyUI(fluidPage(
     sidebarLayout(
         sidebarPanel(
             fileInput("xmlfile", label = h3("File input"), accept = ".xml"),
-            # actionButton("exportbtn", label = "Export", class = "btn-success"),
-            downloadButton("exportbtn", "Download"),
+            actionButton("exportbtn", label = "Export", class = "btn-success"),
+            # downloadButton("exportbtn", "Download"),
             verbatimTextOutput("saveTxt")
         ),
 
