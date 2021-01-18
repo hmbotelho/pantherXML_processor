@@ -1,0 +1,12 @@
+name: pantherXML_processor
+title: pantherXML_processor
+username:
+account: hmbotelho
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3486409
+bundleId: 4113818
+url: https://hmbotelho.shinyapps.io/pantherXML_processor/
+when: 1611002849.06168
+asMultiple: FALSE
+asStatic: FALSE
