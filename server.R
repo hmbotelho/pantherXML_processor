@@ -1,3 +1,5 @@
+options(shiny.maxRequestSize=300*1024^2)
+
 library(XML)
 library(shiny)
 library(openxlsx)
